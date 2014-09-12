@@ -30,7 +30,7 @@ Starting the server...
 
 ```
 
-Note that there is no confirmation that the server has infact started. Next, I ran the client script (client.py) and received the following output
+Note that there is no confirmation that the server has in fact started. Next, I ran the client script (client.py) and received the following output
 
 ```
 ping()
