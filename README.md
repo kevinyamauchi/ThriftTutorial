@@ -16,6 +16,39 @@ sudo pip install thrift
 
 ```
 
-I had to add the thrift source folder to  the ThriftTutorial directory to add the libraries...I need to find where pip installed them...
+I had to add the thrift source folder to  the ThriftTutorial directory to add the libraries...I need to find where pip installed them...I changed the path insert to
 
+```
+sys.path.insert(0, glob.glob('./thrift/lib/py/build/lib.*')[0])
+
+```
+
+First, I started the server and received the following output
+
+```
+Starting the server...
+
+```
+
+Note that there is no confirmation that the server has infact started. Next, I ran the client script (client.py) and received the following output
+
+```
+ping()
+1 + 1 = 2
+InvalidOperation: InvalidOperation(what=4, why='Cannot divide by 0')
+15 - 10 = 5
+Check log: 5
+
+```
+
+The server gave the following output
+
+```
+ping()
+add(1, 1)
+calculate(1, Work(comment=None, num1=1, num2=0, op=4))
+calculate(1, Work(comment=None, num1=15, num2=10, op=2))
+getStruct(1)
+
+```
 

@@ -2,7 +2,7 @@ import sys, glob
 
 # Add the generated python files to the path
 sys.path.append('gen-py')
-sys.path.insert(0, glob.blog('../../lib/py/build/lib.*')[0])
+sys.path.insert(0, glob.glob('./thrift/lib/py/build/lib.*')[0])
 
 from tutorial import Calculator
 from tutorial.ttypes import *
