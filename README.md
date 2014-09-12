@@ -16,8 +16,9 @@ sudo pip install thrift
 
 ```
 
-I had to add the thrift source folder to  the ThriftTutorial directory to add the libraries...I need to find where pip installed them...I changed the path insert to
+~~I had to add the thrift source folder to  the ThriftTutorial directory to add the libraries...I need to find where pip installed them...I changed the path insert to~~
 
+The python library is not required when the python bindings are installed (duh...). I commented out the following line
 ```
 sys.path.insert(0, glob.glob('./thrift/lib/py/build/lib.*')[0])
 
